@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <title>QRCODE GENERATOR</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="container">
+        <h1>QR Code Generator</h1>
+        <div class="input">
+          <input class="input-text" type="text" placeholder="Cole sua URL aqui" id="textInput" />
+        </div>
+        <div class="btn">
+          <button onclick="handleTextInput()">Gerar QR Code</button>
+        </div>
+      </div>
+      <div class="qrcode" id="qrcode"></div>
+      <div class="loading" id="loading" style="display: none">
+        <span class="spinner"></span>
+        <p>Gerando QR Code...</p>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
